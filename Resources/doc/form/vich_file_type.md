@@ -14,7 +14,7 @@ class Form extends AbstractType
     {
         // ...
 
-        $builder->add('image', 'vich_file', array(
+        $builder->add('imageFile', 'vich_file', array(
             'required'      => false,
             'allow_delete'  => true, // not mandatory, default is true
             'download_link' => true, // not mandatory, default is true
@@ -36,7 +36,7 @@ class Form extends AbstractType
     {
         // ...
 
-        $builder->add('image', VichFileType::class, array(
+        $builder->add('imageFile', VichFileType::class, array(
             'required'      => false,
             'allow_delete'  => true, // not mandatory, default is true
             'download_link' => true, // not mandatory, default is true
